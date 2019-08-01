@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.324602">
+<testcase classname="Search and place order for Vegetables" name="Search for items and then move to checkout page" time="0.323502">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at pageObjects.HomePage.getSearch(HomePage.java:31)&#13;&#10;&#9;at stepDefinations.MyStepDefinitions.user_searched_for_something_vegetable(MyStepDefinitions.java:39)&#13;&#10;&#9;at ✽.When User searched for Brinjal Vegetable(search.feature:13)&#13;&#10;"><![CDATA[Given User is on Greencart Landing page.....................................passed
+When User searched for Brinjal Vegetable....................................failed
+And Added items to cart.....................................................skipped
+And User proceeded to Checkout page for purchase............................skipped
+Then verify selected Brinjal items are displayed in Check out page..........skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at pageObjects.HomePage.getSearch(HomePage.java:31)
+	at stepDefinations.MyStepDefinitions.user_searched_for_something_vegetable(MyStepDefinitions.java:39)
+	at ✽.When User searched for Brinjal Vegetable(search.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Search and place order for Vegetables" name="Search for items and then move to checkout page 2" time="0.0011">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at pageObjects.HomePage.getSearch(HomePage.java:31)&#13;&#10;&#9;at stepDefinations.MyStepDefinitions.user_searched_for_something_vegetable(MyStepDefinitions.java:39)&#13;&#10;&#9;at ✽.When User searched for Beetroot Vegetable(search.feature:13)&#13;&#10;"><![CDATA[Given User is on Greencart Landing page.....................................passed
+When User searched for Beetroot Vegetable...................................failed
+And Added items to cart.....................................................skipped
+And User proceeded to Checkout page for purchase............................skipped
+Then verify selected Beetroot items are displayed in Check out page.........skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at pageObjects.HomePage.getSearch(HomePage.java:31)
+	at stepDefinations.MyStepDefinitions.user_searched_for_something_vegetable(MyStepDefinitions.java:39)
+	at ✽.When User searched for Beetroot Vegetable(search.feature:13)
+]]></failure>
+</testcase>
+</testsuite>
